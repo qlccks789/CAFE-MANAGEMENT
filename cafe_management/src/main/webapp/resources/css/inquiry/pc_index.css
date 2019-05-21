@@ -1,0 +1,87 @@
+
+.pcmh{
+    text-align: center;  
+	font-size: 24px; 
+}
+
+.pcmd{
+    background: palevioletred;
+}
+
+.table{ 
+    width:100%;
+    height:700px;
+    border-collapse: collapse;
+    border: 3px solid #444;
+    font-size: 24px;
+}
+.container { 
+	width: 100%;
+	margin: 0 auto; 
+    height:30px; 
+}
+
+li { list-style: none; 
+}
+
+.pca { text-decoration: none; transition: .7s; }
+
+ul.mainLnb {
+	width: 960px; 
+	margin: 0 auto;
+	display: flex;
+	justify-content:center;
+}
+
+ul.mainLnb > li {
+	float: right;	
+}
+
+ul.mainLnb a {
+	background-color:rgba(255, 0, 255, 0.089);
+	width: 120px;
+	height: 30px;
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 30px;
+}
+
+ul.mainLnb > li > a {
+	text-align: center;
+	margin: 2px;
+}
+
+ul.mainLnb > li:hover > a {
+	background: wheat;
+	color: plum;
+	list-style-position: outside;
+}
+
+ul.mainLnb > li > ul {
+	display: none;
+}
+
+ul.mainLnb > li:hover > ul {
+	display: block;
+}
+
+ul.mainLnb > li > ul > li > a {
+	margin-left: 2px;
+	padding-left: 5px;
+	box-sizing: border-box;
+	display: flex;
+	
+}
+
+ul.mainLnb > li > ul > li > a:hover {
+	background: whitesmoke;
+}
+
+.pcmainh2 {
+	width:100%;
+	background-image: url("/cafe_management/resources/images/a.jpg");
+	height: 800px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}

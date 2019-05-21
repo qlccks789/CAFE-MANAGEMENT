@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.list_oper_form {
+    margin-top: 20px;
+}
+
+.list_oper_content {
+    width : 100%;
+    border-radius: 5px;
+    box-shadow: 0 6px 13px rgba(31,31,31,0.23);
+    background: var(--colorWhite);
+}
+
+.oper_content_box {
+    width :100%;
+    display: block;
+    padding: 20px;
+}
+
+.oper_content_text {
+    display:inline-block;
+    margin-right: 30px
+}
+
+.list_oper_content + .list_oper_content {
+    margin-top : 20px;
+}
+
+.goods_list_oper_button {
+    margin-top: 20px;
+    text-align:right;
+}

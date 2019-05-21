@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.co.bitguys.repository.dao.InquireMapper">
+	<resultMap id="inquireMap" type="inquire">
+		<result column="inq_no" property="inqNo" />
+		<result column="title" property="title" />
+		<result column="content" property="content" />
+		<result column="view_Cnt" property="viewCnt" />
+		<result column="reg_date" property="regDate" />
+		<result column="goods_no" property="goodsNo" />
+		<result column="mem_NO" property="memNo" />
+	</resultMap>
+	<select id="selectInquire" parameterType="inquire"
+		resultMap="inquireMap">
+		select *
+		from tb_inquire
+	</select>
+
+	<select id="selectInquireCount" resultType="int">
+		select count(*)
+		from tb_inquire
+	</select>
+	
+	<select id="selectInquireByNo" parameterType="int" resultMap="inquireMap">
+		select *
+		from tb_inquire
+		where inq_no = #{inqNo}
+	</select>
+	
+	<insert id="insertInquire" parameterType="inquire">
+		insert into tb_inquire(
+	    inq_no, title, content
+		) values (
+		s_inq_no.nextVal, #{title}, #{content}
+		)
+	</insert>
+
+	<update id="updateViewCnt" parameterType="int">
+		update tb_inquire
+		set view_cnt = view_cnt + 1
+		where inq_no = #{inqNo}
+	</update>
+
+	<delete id="deleteInquire" parameterType="int">
+		delete
+		from tb_inquire
+		where inq_no = #{inqNo}
+	</delete>
+
+	<update id="updateInquire" parameterType="inquire">
+		update tb_inquire		
+		set title = #{title},
+		set content = #{content}
+		where inq_no = #{inqNo}
+	</update>
+	
+	<resultMap id="responseMap" type="response">
+		<result column="response_no" property="responseNo" />
+		<result column="inq_no" property="inqNo" />
+		<result column="content" property="content" />
+	    <result column="reg_date" property="regDate" />
+	</resultMap>
+	
+	<select id="selectResponsesByNo" parameterType="int" resultMap="responseMap">
+	    select *
+	      from tb_inquire_response
+	      where inq_no = #{inqNo}
+	      order by response_no 
+	</select>
+	
+	<insert id="insertResponse" parameterType="response">
+		insert into tb_inquire_response(
+		response_no, inq_no, content, reg_date
+		) values (
+		s_response_no.nextval, #{inqNo}, #{title}
+		)
+	</insert>
+
+</mapper>

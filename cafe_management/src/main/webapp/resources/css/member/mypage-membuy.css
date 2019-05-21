@@ -1,0 +1,36 @@
+.mypage-section__membuy {
+  width: 100%;
+}
+
+.mypage__membuy-table {
+  margin-top: 20px;
+  width: 100%;
+}
+.mypage__membuy-table tr {
+  border-bottom: 1px solid var(--colorBorder);
+}
+
+.mypage__membuy-table td,
+.mypage__membuy-table th {
+  vertical-align: middle;
+  text-align: center;
+  height: 30px;
+}
+
+.mypage__membuy-table th{
+    font-size : 16px;
+}
+.mypage__membuy-table td {
+  color: rgba(0, 0, 0, 0.8);
+  font-size : 14px;
+}
+
+.mypage__membuy-table td:first-child,
+.mypage__membuy-table th:first-child {
+  width: 5%;
+}
+
+.mypage__membuy-table td:nth-child(2),
+.mypage__membuy-table th:nth-child(2) {
+  width: 50%;
+}

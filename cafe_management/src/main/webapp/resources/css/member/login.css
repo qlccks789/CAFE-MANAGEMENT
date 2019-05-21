@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+.login {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+}
+
+.login .login-box {
+  width: 55%;
+  height: 100%;
+  background-color: var(--colorWhite);
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 2px 3px 10px 3px #a89d83;
+  padding: 10px;
+}
+
+.main-body__login {
+  background-color: #d1ccc0;
+  height: 750px;
+}
+
+.login-box .login-input {
+  display: block;
+  height: 50px;
+  opacity: 0.7;
+  background-color: #e2d5b3;
+  border-radius: 5px;
+  border: none;
+  width: 90%;
+  padding: 0px 20px;
+  margin: 0 auto;
+  font-size: 14px;
+  box-shadow: 3px 3px 2px #d1ccc0;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "Nanum Gothic", sans-serif;
+  letter-spacing: 1px;
+}
+.login-box .login-input:focus::placeholder {
+  color: transparent;
+}
+
+.login-box {
+  color: var(--colorBrown);
+  font-family: "Nunito", sans-serif;
+}
+
+.login-box .login-input:focus {
+  outline: none;
+  background-color: #d1ccc0;
+}
+
+.login-box .login-box__title {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  padding-left: 3px;
+}
+.login-box .login-box__title span {
+  font-size: 0.7em;
+}
+
+.login-box > div:first-child {
+  margin-top: 50px;
+  width: 100%;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.login-box .login-box__input {
+  margin-bottom: 5px;
+}
+
+.login-box > div {
+  width: 70%;
+  margin: 0 auto;
+  transition: 0.2s;
+}
+.login-box > .login-box__social > div {
+  transition: 0.2s;
+}
+.login-box > .login-box__social > div:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.login-box .login-box__social {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-box__social > div {
+  width: 49%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--colorWhite);
+  border-radius: 10px;
+  margin: 5px 0px;
+  font-weight: 500;
+  padding: 0px 20px;
+  font-family: "Jua", sans-serif;
+  font-size: 18px;
+  box-shadow: 3px 3px 2px #d1ccc0;
+}
+
+.login-box__social > div:nth-child(1) {
+  background-color: #27d34a;
+}
+.login-box__social > div:nth-child(2) {
+  background-color: #f45a5c;
+}
+.login-box__social > div:nth-child(3) {
+  background-color: #4e75bd;
+}
+.login-box__social > div:nth-child(4) {
+  background-color: #ffeb00;
+  color: #3c1e1f;
+}
+
+.login-box__social > div > span {
+  display: block;
+  width: 80%;
+  text-align: center;
+}
+.login-box__social > div > img {
+  width: 30px;
+  height: 30px;
+}
+
+/* 로그인 , 회원가입 버튼 만들기!! */
+
+.login-box__btn {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.login-box__btn button {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: #795242;
+  color: var(--colorWhite);
+  border: none;
+  border-radius: 15px;
+  font-size: 18px;
+  box-shadow: 3px 3px 2px #d1ccc0;
+}
+
+.login-box__btn button:hover {
+  background-color: #282828;
+  cursor: pointer;
+}
+
+.login-box__check-member {
+  display: inline-block;
+  font-size : 12px;
+  color : rgba(0, 0, 0, 0.5);
+  margin : 10px;
+  margin-top : 15px;
+  text-decoration: underline;
+}

@@ -1,0 +1,142 @@
+.pccomment{
+    background-color: #dcdcdc;
+    height:50px;
+    text-align: center;
+}
+.pcsummary{
+    text-align: center;
+    font-size: 1.8em;
+    color:rgba(0, 0, 255, 0.664);
+    padding:8px;
+}
+
+.pccommt{
+    margin:0 auto;
+}
+
+.pcwsubd button{
+    font-size: 1.2em;
+}
+
+.pcwen{
+    text-align: center;  
+    font-size: 24px; }
+
+.pchr{
+     color: black; 
+     border:1px solid white;
+ }
+.pcth2 {
+     width:20%;
+     font-size: 18px;
+     background-color: azure;
+     border: 1px solid black;
+ }
+
+ .pcw{
+     width:100%;
+     height:700px;
+     border-collapse: collapse;
+     border: 1px solid #444;
+    
+ }
+ .pcwb{
+     margin:0 auto;
+     width : 1000px;
+     height: 950px;      
+     
+ }
+.pcwsub{
+     width:10%;
+     border: 2px;
+     font-size: 20px;    
+ }
+.pcwsubd{
+     display: flex;
+     justify-content: center;
+ } 
+.pctd2, .pcth3{
+background-color: azure;
+border: 1px solid black;
+border-collapse: none;
+}
+
+td.pctd3{
+    border:1px solid black;
+}
+
+.pc_textarea{
+    margin: 10px 10px;
+    padding: 0px 10px;
+    border: 1px solid black;
+    border-collapse: none;
+}
+
+.pctd3, .pcth3{
+    background-color: azure;
+    
+}
+
+.pcth3{
+    font-stretch: semi-condensed;
+    -ms-flow-into: none;
+    font-size: 1.3em;
+    text-align: center;
+    vertical-align: middle; 
+}
+
+.pctd2 button{
+    font-size: 1.2em;
+    border: 1px solid rgba(0, 0, 0, 0.774);
+    color:rgba(92, 43, 226, 0.644);
+    font-weight: 600;
+    padding: 10px auto;
+}
+
+.pcwsubd button{
+    font-size: 1.2em;
+    color:rgba(92, 43, 226, 0.644);
+    font-weight: 660;
+    border: 1px solid rgba(0, 0, 0, 0.774);
+}
+
+.pc_select1{
+      width:100px;
+      height:24px;
+      vertical-align: middle;
+}
+
+.pc_forms{
+    height: 760px;
+    font:0.9em "맑은 고딕", 돋움, sans-serif;
+}
+.pctd5{
+    height: 30px;
+    background-color: azure;
+    border-collapse: none;
+}
+
+.pctd5 button{
+    font-size: 1.08em;
+    border: 1px solid rgba(0, 0, 0, 0.774);
+    color:rgba(92, 43, 226, 0.644);
+    font-weight: 545;
+    display: flex;
+    justify-content: left;
+}
+
+.pctd5.pc_file button{
+    color:rgba(92, 43, 226, 0.644);
+    font-weight: 600;
+    padding: 10px auto;
+}
+
+.pcdetail2 {
+     width:40%;
+     height:40px;
+     font-size: 1.5em;
+     text-align:left;
+     vertical-align: middle;
+     background-color: azure;
+     border: 1px solid black;
+ }  

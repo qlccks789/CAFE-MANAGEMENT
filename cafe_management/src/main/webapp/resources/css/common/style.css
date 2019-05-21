@@ -1,0 +1,45 @@
+@import "../inquiry/pc_content.css";
+@import "../inquiry/pc_index.css";
+@import "../inquiry/pc_list.css";
+@import "../inquiry/pc_update.css";
+@import "../inquiry/pc_delete.css";
+@import "../inquiry/pc_enroll.css";  
+@import "../inquiry/pc_comment.css";
+@import "../inquiry/pc_index.css";
+@import "../cafe/review-main.css";
+@import "../cafe/review-selectlist.css";
+@import "../cafe/review-detailselect.css";
+@import "../cafe/review-insert.css";
+@import "../cafe/review-update.css";
+@import "../common/reset.css";
+@import "../member/mypage.css";
+@import "../member/signup.css";
+@import "../member/header.css";
+@import "../member/footer.css";
+@import "../member/login.css";
+@import "../member/mainboard.css";
+@import "../member/mainproduct.css";
+@import "../member/addrlink.css";
+@import "../goods/buy_main.css";
+@import "../goods/goods_buying_complete.css";
+@import "../goods/goods_buying.css";
+@import "../goods/goods_detail_oper.css";
+@import "../goods/goods_detail.css";
+@import "../goods/goods_insert.css";
+@import "../goods/goods_list_oper.css";
+@import "../goods/goods_modify.css";
+@import "../cafe/input.css";
+@import "../cafe/register.css";
+@import "../cafe/search.css";
+@import "../cafe/modify.css";
+@import "../cafe/detail.css";
+
+@import url("https://fonts.googleapis.com/css?family=Jua|Lato|Nanum+Gothic|Nanum+Pen+Script|Playfair+Display");
+
+:root {
+  --colorYellow: #fbea74;
+  --colorWhite: #f5f5f5;
+  --colorGray: #8b907c;
+  --colorBrown: #795227;
+  --colorReddishBrown: #cb913f;
+}

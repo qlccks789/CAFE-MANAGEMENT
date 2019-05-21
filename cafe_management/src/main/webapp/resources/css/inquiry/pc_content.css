@@ -1,0 +1,137 @@
+.pccontainer{
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  
+  .pcitem{
+  background-color: gold;
+  border: 1px solid gray;
+  padding: 1px 10px 1px 10px;
+  flex-basis:150px;
+  text-align: center;
+  
+  }
+  
+  .pcmc{
+    background-color:wheat;
+    text-align: center;
+    text-shadow: 1px 10px 10px #000;
+    font-weight: bold;
+    /* vertical-align: middle; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pcmc2{
+    border: 2px solid #345;
+    border-collapse: collapse;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pctable, .pctd {
+    border-collapse: inherit;
+    border-radius: 10px 10px 10px 10px;
+  }
+  .pctable {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 80%;
+    height: 400px;
+  }
+  pcth {
+    height: 40px;
+  }
+  .pctd {
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.1em;
+  }
+  .pc_tr:nth-child(odd) {
+    background-color: white;
+  }
+
+  .pc_tr:hover {
+    background-color: wheat;
+    color: rebeccapurple;
+  }
+  .pcp{
+      text-align: center;
+      color:black;
+      font-weight: bold;
+      font-size: 1.2em;
+  }
+  #pageNav{
+    background: var(--colorWhite);
+  }
+ 
+  #pageNav ul{
+    padding:50px 30px 30px 0px;
+    text-align: center;
+  }
+
+  #pageNav ul li{
+    display: inline;
+    padding:2px;
+  }
+
+  #pageNav ul li a {
+    background-color: wheat;
+    padding:5px;
+    color:black;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  #pageNav ul li:last-child a {
+    padding:5px 10px;
+    background-color: blue;
+    color:black;
+  }
+  #pageNav ul li a:hover{
+    background-color:plum;
+  }
+
+  .pcbody{
+    background: var(--colorWhite);
+  }
+  .pcmc2{
+    text-decoration: none;
+    color:inherit;
+    font-size: 1.8em;
+  }
+ .pcmc, .pcitem {
+   height: 50px;
+   font-size: 2em;
+}
+.pcps{
+    font-size: 1.5em;
+  }
+.pctd5{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.15em;
+    font-weight: bolder;
+    border-collapse: collapse;
+    border-radius: 10px 10px 10px 10px;
+}
+.pcinfomation{
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.pc_rev{
+  text-decoration: underline;
+}
+
+.pctd6{
+  vertical-align: middle;
+}

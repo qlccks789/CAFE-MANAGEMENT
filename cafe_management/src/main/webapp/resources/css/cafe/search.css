@@ -1,0 +1,121 @@
+
+   .cafe-table{
+      width:100%;
+      height:600px;
+      border:1px solid black;
+      font-style:italic;
+      border-collapse:collapse;
+      border-color:black;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .cafe-table > tbody > tr > th{
+	  height: 50px;
+	  border:1px solid black;
+      border-color:black;
+      font-size:20px;
+      text-align: center;
+      vertical-align: middle;
+	  background-color:#a7c25f; color:#fff;
+    }
+ 	
+ 	.cafe-table >tbody > tr > td{
+ 	 border:1px solid black;
+ 	 text-align:center;
+ 	 vertical-align: middle;
+ 	 font-size:20px;
+	 background-color:#F3F5BB;
+ 	}
+ 	
+ 	.cafe-table >tbody > tr > td:hover{
+ 	 border:1px solid black;
+ 	 text-align:center;
+ 	 vertical-align: middle;
+ 	 font-size:15px;
+	 background-color:#f9f9f9;
+ 	}
+ 
+    .find{
+      font-style:italic;
+      font-size:40px;
+      font-weight:bold;
+    }
+
+
+    .list-container .cafe-search .cafe-search1{
+      border:1px solid black;
+      width:100%;
+      height:40px;
+      padding:10px;
+      text-align: center;
+      vertical-align: middle;
+      background-color:#b0c1cf;
+      border-collapse: collapse;
+    }
+  
+    .list-container .cafe-search .cafe-search2{
+      border:solid 1px #000000;
+      height:40px;
+      padding:10px;
+      text-align: center;
+      vertical-align: middle;
+      background-color:#b0c1cf;
+      border-collapse: collapse;
+    }
+
+
+
+
+
+   .main-body__search {
+    width:100%;
+    height:1000px;
+   }
+
+  .search-container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    margin:0 auto;
+  }
+
+  .search-container .list-container {
+    width: 100%;
+    height:800px;
+    margin:0 auto;
+  }
+
+  .search-container .list-container > .search {
+    width: 150px;
+    height: 50px;
+  }
+
+  .list-container .text{
+    width:60px;
+  } 
+
+  .list-container .input > .search{
+    width:60px;
+
+  }
+
+
+  .search-container .list-container .input input{
+    width:320px;
+    height:30px;
+  }
+
+  
+  .two__button{
+  	width:200px;
+  	height:50px;
+  }
+  
+  .two__button .mod__del__button{
+  float:right;
+  width:40px;
+  height:20px;
+  }

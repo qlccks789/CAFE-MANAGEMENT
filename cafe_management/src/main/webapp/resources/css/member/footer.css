@@ -1,0 +1,72 @@
+.footer .footer-text__content {
+  font-family: "Jua", sans-serif;
+}
+.footer .footer-text__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer {
+  background-color: #1e1e1e;
+  color: #646464;
+}
+
+.footer .footer-text {
+  height: 300px;
+  padding: 20px 40px;
+  font-family: "Playfair Display", serif;
+}
+.footer-text .footer-text__title {
+  height: 50px;
+  margin: 40px auto;
+  padding-left: 8px;
+}
+.footer-text .footer-text__content {
+  font-size: 18px;
+}
+
+.footer-text__content > div {
+  display: flex;
+}
+
+.footer-text__content > div > span {
+  margin: 5px 0px;
+  padding: 0px 8px;
+  border-right: 1.5px solid #646464;
+  height: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text__title .title__text {
+  font-size: 40px;
+}
+
+.footer-text__title .title__icons i {
+  margin-left: 3px;
+}
+
+.main-body {
+  height: 80vh;
+}
+
+.footer-text__bottom {
+  margin: 15px 0;
+  padding-left: 8px;
+}
+
+a.top__button {
+  position: fixed;
+  right: 60px;
+  bottom: 50px;
+  display: none;
+}
+
+a.top__button > i {
+  color : var(--colorWhite);
+  background-color : rgba(0, 0, 0, 1);
+  opacity: 0.8;
+  padding :  7px 10px;
+  border-radius: 50%;
+}

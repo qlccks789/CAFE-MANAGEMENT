@@ -1,0 +1,84 @@
+.main-product {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  grid-auto-rows: 200px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.main-product .main-product__grid {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-product .main-product__grid .grid-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-product .main-product__grid:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: scale(1.03) translateY(-5px);
+}
+.main-product .main-product__grid:hover .grid-block {
+  opacity: 0.05;
+}
+
+.main-product .main-product__grid:hover .main-product__content {
+  visibility: hidden;
+}
+.main-product .main-product__grid .main-product__content {
+  position: relative;
+  z-index: 2px;
+  font-size: 24px;
+  font-family: "Jua", sans-serif;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.main-product .main-product__grid .grid-block {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.65);
+  box-sizing: border-box;
+  z-index: 5;
+  padding: 20px;
+  border-radius: 5px;
+}
+.main-product .main-product__grid:first-child {
+  grid-area: span 2 / span 2;
+  /* background-image: url("https://i.pinimg.com/564x/16/b1/ab/16b1ab62fdad543b6ff2171c57c2986a.jpg"); */
+  background-image: url("/cafe_management/resources/images/goods/2019/04/11/EP5365_13_01.jpeg");
+  background-size: 600px 450px;
+}
+
+.main-product .main-product__grid:nth-child(4) {
+  grid-area: span 2 / span 2;
+  /* background-image: url("https://i.pinimg.com/564x/97/ad/6a/97ad6ae8b2f239e76d3612d9f436f7f6.jpg"); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 400px;
+}
+
+.main-product .main-product__grid:nth-child(2) {
+  background-image: url("https://i.pinimg.com/564x/f3/d5/81/f3d581a30d55a466a7784c425bb7a9ea.jpg");
+  background-size : 200px;
+}
+.main-product .main-product__grid:nth-child(3) {
+  background-image: url("https://i.pinimg.com/564x/00/95/68/00956804ca966db8426f183689adf815.jpg");
+  background-size : 110px;
+}
+.main-product .main-product__grid:nth-child(5) {
+  background-image: url("https://i.pinimg.com/564x/1a/7f/a9/1a7fa94499c4f664e57973c3eb37a7f7.jpg");
+  background-size : 200px;
+}
+.main-product .main-product__grid:nth-child(6) {
+  background-image: url("https://i.pinimg.com/564x/52/f9/63/52f963160cb0e31d051ef8005aa0996d.jpg");
+  background-size : 150px;
+}

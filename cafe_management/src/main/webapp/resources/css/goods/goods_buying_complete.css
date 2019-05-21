@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+.complete_title {
+  text-align:center
+}
+
+.complete_info_wrap {
+  margin-top: 50px;
+}
+
+.complete_info_box {
+  width: 49%;
+  height: 280px;
+  border: 1px solid #ddd;
+  margin:0 auto;
+  padding: 30px 20px;
+  box-sizing:border-box;
+  box-shadow: 0 6px 13px rgba(31,31,31,0.23);
+  background: var(--colorWhite);
+}
+
+.complete_info_box p {
+  line-height: 1.4;
+}
+
+.complete_info_box p + p {
+  padding-top: 10px;
+}

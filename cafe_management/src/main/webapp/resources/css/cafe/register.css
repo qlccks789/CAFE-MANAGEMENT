@@ -1,0 +1,211 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+  } */
+.main-body__register {
+  width: 100%;
+  height: 1000px;
+}
+.register-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 800px;
+  display: flex;
+  justify-content: flex-start;
+}
+.line {
+  float: both;
+  overflow: auto;
+}
+.left {
+  background: rgb(146, 113, 46);
+  text-align: center;
+  width: 20%;
+  height: 40px;
+  /* float: left; */
+  margin-right: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding-left: 5px;
+}
+.right {
+  border-bottom: 3px solid black;
+  width: 30%;
+  height: 40px;
+  float: left;
+  box-sizing: border-box;
+}
+.putin {
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-bottom: 3px solid black;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+.ll {
+  width: 20%;
+  height: 40px;
+  float: left;
+  margin-right: 20px;
+  line-height: 40px;
+}
+.rr {
+  margin-left: 20px;
+}
+.check {
+  display: block;
+  float: right;
+  height: 40px;
+  width: 40%;
+  margin: 0px;
+  margin-right: 5px;
+}
+.register-container2 {
+  margin-top: 40px;
+  width: 50%;
+  height: 80%;
+}
+.register-container2 .image-container {
+  width: 500px;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.register-container2 .image-container > div {
+  /* background-color: white; */
+  border: 1px gray solid;
+  padding: 1em;
+}
+
+.register-container2 .image-container > .wholecafe {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA5MjFfMTQ0%2FMDAxNTM3NDk1NTMwMzk0.7BqQFT_Zj9riX-FymGa2dCDV1NxTvwpoh1ueSDUJTWgg.NYFGt9-TuimEl9-aE3xAmmwtQc4DMS75zzLML6wfKUAg.JPEG.august8614%2F20180920_194753.jpg&type=b400);
+  background-size: 265px;
+}
+
+.register-container2 .image-container > .insidecafe {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fpost.phinf.naver.net%2F20150508_173%2Fds5rtz_1431029538002s2agO_JPEG%2Fmug_obj_143102937145586007.jpg&type=b400);
+  background-size: 265px;
+}
+
+.register-container2 .image-container > .insidecafe2 {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBQ_5cEl9_SZzNJQbDZje73I1OSu1QCOoLqFCRONk3JGKL55B);
+  background-size: 265px;
+}
+
+.register-container2 .image-container > .insidecafe3 {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20140324_234%2Fsmartlatte_1395661272240L3Peh_JPEG%2F20140318_%25BD%25BA%25C5%25B8%25B9%25F7%25BD%25BA%25BD%25C5%25C3%25CC%25C1%25A1.jpg&type=b400);
+  background-size: 265px;
+}
+
+.register-container2 .image-container > .insidecafe4 {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150109_3%2Fsmartlatte_1420792965265s8r1l_JPEG%2F20141228_114701.jpg&type=b400);
+  background-size: 265px;
+}
+
+.register-container2 .image-container > .insidecafe5 {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160318_275%2Fyangsooyeol_1458291753842kpe9e_JPEG%2F2016-03-18_11.17.48.jpg&type=b400);
+  background-size: 265px;
+}
+
+.register-container2 .image-container > .insidecafe6 {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20120311_109%2Fnykim92_13313991429970zJwM_JPEG%2FIMG_1098.JPG&type=b400);
+  background-size: 265px;
+}
+
+.register-container2 .image-container > .insidecafe7 {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODAzMjVfMTQg%2FMDAxNTIxOTcyMTQ5ODY5.v7oF-BtcryyXm9Q8UBzU6sfoeqWSyR4fpDJZyIsb0-Mg.ewinyDyEnKcmBVSc5HsBuhfUri8tlVwERPx2MpW0LzMg.JPEG.investmoon%2F20180325_181113_HDR.jpg&type=b400);
+  background-size: 265px;
+}
+
+.upload {
+  width: 100px;
+  height: 30px;
+}
+
+.image-container .wholecafe {
+}
+
+.register-container2 > div:nth-child(odd) {
+}
+
+.line {
+  display: flex;
+  margin:20px;
+}
+
+
+.line > input .input {
+  border-radius: 10px;
+  font-size: 16px;
+  height: 55px;
+  width: 350px;
+  padding-left: 50px;
+  border-color: black;
+}
+.register-container .input-container {
+  width: 600px;
+  height: 800px;
+}
+.input-container {
+  padding: 20px;
+  border-radius: 50px;
+  margin-right: 10px;
+
+  box-shadow: 0 0 55px 5px ghostwhite;
+}
+.register-container .register-container2 {
+  width: 50%;
+  height: 100%;
+}
+.title_top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+.title_top > h2 {
+  margin-top: 50px;
+  font-size: 40px;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.upload {
+  background-color: black;
+  color:white;
+  border-radius:100px;
+  
+}
+
+.upload:hover{
+  background-color:white;
+  color:black;
+
+}
+.check {
+  background-color: black;
+  color:white;
+  border-radius:100px;
+}
+
+.check:hover{
+  background-color:white;
+  color:black;
+}
+
+
+.cafe-register {
+  font-style: italic;
+  font-size: 50px;
+  font-weight: bold;
+}

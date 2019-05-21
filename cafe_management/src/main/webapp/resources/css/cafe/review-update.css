@@ -1,0 +1,127 @@
+.review-update-all {
+    background-color: #d1ccc0;
+}
+
+.review-update-centercolor {
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.review-update__color {
+    width: 800px;
+    height: 25%;
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: var(--colorWhite);
+    border-radius: 20px;
+}
+
+.review-update__header {
+    width: 100%;
+    height: 50px;
+}
+
+.review-update__header > .review-update__header__text {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    
+
+}
+
+.review-update__title {
+    width: 300px;
+    height: 130px;
+
+}
+
+.review-update__title > .review-update__title__textinput > .review-update__title__text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 40px;
+    
+    
+}
+
+.review-update__title > .review-update__title__textinput > textarea {
+    width: 500px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    opacity: 0.5;
+    background-color: #e2d5b3;
+}
+
+.review-update__title > .review-update__title__textinput > textarea:focus {
+    outline: none;
+}
+
+.review-update__rating-point {
+    width: 300px;
+    height: 130px;
+}
+
+.review-update__rating-point > .review-update__rating-point__text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.review-update__content {
+    width: 300px;
+    height: 300px;
+}
+
+.review-update__content > .review-update__content__textinput > .review-update__content__text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.review-update__content > .review-update__content__textinput > textarea {
+    margin-left: 40px;
+    margin-top: 25px;
+    font-size: 20px;
+    border-radius: 10px;
+    opacity: 0.5;
+    background-color: #e2d5b3;
+}
+
+
+.review-update__content > .review-update__content__textinput > textarea:focus {
+    outline: none;
+}
+
+.review-update__updatebutton {
+    width: 750px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.review-update__updatebutton > a > button {
+    display: block;
+    width: 60px;
+    height: 50px;
+    font-size: 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.review-update__updatebutton > a > button:hover {
+    background-color: #e2d5b3;
+}
+
+.review-update__updatebutton > a > button:focus {
+    outline: none;
+}

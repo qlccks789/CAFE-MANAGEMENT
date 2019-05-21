@@ -1,0 +1,170 @@
+.modify-container {
+  height: 900px;
+  width: 1200px;
+  background: rgb(255, 255, 255);
+  margin: 0 auto;
+}
+
+.crazy {
+  background: rgb(255, 255, 255);
+  height: 250px;
+  padding: 30px;
+  margin:20px;
+}
+.header__center {
+  /* border: 1px solid black; */
+  padding: 20px;  
+  height: 100%;
+  margin: 0 auto;
+}
+.header__center > .header__a {
+  float: left;
+  width: 23%;
+  height: 100%;
+  border-right: 2px solid #ddd;
+  background-size: 190px;
+  border: 1px solid black;
+}
+.header__center > .header__b {
+  float: left;
+  width: 23%;
+  height: 100%;
+  border: 1px solid black;
+}
+.header__center > .header__c {
+  float: left;
+  width: 23%;
+  height: 100%;
+  border: 1px solid black;
+}
+.header__center > .header__d {
+  float: left;
+  width: 23%;
+  height: 100%;
+  border: 1px solid black;
+}
+.header__center > .header__e {
+  float: left;
+  width: 23%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.header__center > .header__f {
+  float: left;
+  width: 23%;
+  height: 100%;
+  border: 1px solid black;
+}
+.header__center > .header__g {
+  float: left;
+  width: 23%;
+  height: 100%;
+  border: 1px solid black;
+}
+.header__center > .header__h {
+  float: left;
+  width: 23%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.modify-container .crazy .header__center > .header__a {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA5MjFfMTQ0%2FMDAxNTM3NDk1NTMwMzk0.7BqQFT_Zj9riX-FymGa2dCDV1NxTvwpoh1ueSDUJTWgg.NYFGt9-TuimEl9-aE3xAmmwtQc4DMS75zzLML6wfKUAg.JPEG.august8614%2F20180920_194753.jpg&type=b400);
+  background-size: 265px;
+}
+.modify-container .crazy .header__center > .header__b {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fpost.phinf.naver.net%2F20150508_173%2Fds5rtz_1431029538002s2agO_JPEG%2Fmug_obj_143102937145586007.jpg&type=b400);
+  background-size: 265px;
+}
+.modify-container .crazy .header__center > .header__c {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxODA5MjFfMTQ0%2FMDAxNTM3NDk1NTMwMzk0.7BqQFT_Zj9riX-FymGa2dCDV1NxTvwpoh1ueSDUJTWgg.NYFGt9-TuimEl9-aE3xAmmwtQc4DMS75zzLML6wfKUAg.JPEG.august8614%2F20180920_194753.jpg&type=b400);
+  background-size: 265px;
+}
+.modify-container .crazy .header__center > .header__d {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD84quv5eYeWcHlJ06ADIpRcAgPs2nyxUJfk51vneXwFy55bViDw);
+  background-size: 280px;
+}
+.modify-container .crazy .header__center > .header__e {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20150109_3%2Fsmartlatte_1420792965265s8r1l_JPEG%2F20141228_114701.jpg&type=b400);
+  background-size: 265px;
+}
+.modify-container .crazy .header__center > .header__f {
+  background-image: url(https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160318_275%2Fyangsooyeol_1458291753842kpe9e_JPEG%2F2016-03-18_11.17.48.jpg&type=b400);
+  background-size: 265px;
+}
+.modify-container .crazy .header__center > .header__g {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdf_GSJx9kBlAPSsP0G3Y9LUwXgUtNBq3Zd_FiZsyf60PXUh08);
+  background-size: 265px;
+}
+.modify-container .crazy .header__center > .header__h {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGY2O-vcq0_mURvoLX4zMd86Jgy84dHt4gUAfEXGnO2cA6krdw);
+  background-size: 265px;
+}
+
+.modify-container2 {
+  margin: 0 auto;
+  width: 1200px;
+  height: 650px;
+  margin-top: 150px;
+  margin-left: 50px;
+}
+
+.inform {
+  float: both;
+  overflow: auto;
+  display: flex;
+}
+.inform > input {
+  border-radius: 10px;
+  font-size: 16px;
+  width:500px;
+  height: 55px;
+  padding-left: 50px;
+  border-color:black;
+}
+
+.zizi {
+  width: 50%;
+  height: 40px;
+  border: none;
+  border-bottom: 3px solid black;
+  box-sizing: border-box;
+}
+
+.option {
+  width: 1000px;
+  height: 100px;
+}
+.option .modify {
+  background-color:black;
+  border-radius:100px;
+  color:white;
+  width: 130px;
+  height: 50px;
+  float: right;
+  margin:0 auto;
+}
+
+.option .modify:hover{
+  background-color:white;
+  color:black;
+}
+
+.modify-container .crazy .eq900{
+    font-size:40px;
+    font-style:italic;
+    font-weight:bold;
+
+}
+
+.option .upload__modify{
+  background-color:black;
+  border-radius:100px;
+  color:white;
+  width: 130px;
+  height: 50px;
+  float: right;
+}
+
+.option .upload__modift:hover{}

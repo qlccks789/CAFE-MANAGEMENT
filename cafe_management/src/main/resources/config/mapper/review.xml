@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.co.bitguys.repository.dao.ReviewMapper">
+	<resultMap id="reviewMap" type="review">
+		<result column="review_no" property="reviewNo"/> 
+		<result column="name" property="name"/> 
+		<result column="reg_date" property="regDate"/> 
+		<result column="rating_star" property="ratingStar"/> 
+		<result column="content" property="content"/> 
+		<result column="view_cnt" property="viewCnt"/> 
+		<result column="mem_no" property="memNo"/> 
+		<collection property="imageList" column="review_no" select="selectFilesByNo" />
+	</resultMap>
+	
+	<select id="selectBoardMemNo" parameterType="int" resultMap="reviewMap">
+		select *
+		  from tb_cafe_review
+		 where mem_no = #{memNo}
+		 order by review_no desc
+	</select>
+	<!--  후기 글 등록 -->
+	<insert id="insertReview" parameterType="review">
+		<selectKey keyProperty="reviewNo" resultType="int" order="BEFORE">
+			select s_review_no.nextval 
+			  from dual
+		</selectKey>
+			insert into tb_cafe_review 
+			(
+				review_no, 
+				name, 
+				rating_star, 
+				content, 
+				mem_no
+			)
+			values 
+			(
+				#{reviewNo}, 
+				#{name}, 
+				#{ratingStar}, 
+				#{content}, 
+				#{memNo}
+			)
+	</insert>
+	
+	<resultMap id="reviewImageMap" type="reviewimage">
+		<result column="image_no" property="imageNo"/> 
+		<result column="review_no" property="reviewNo"/> 
+		<result column="orgname" property="orgname"/> 
+		<result column="sysname" property="sysname"/> 
+		<result column="path" property="path"/> 
+	</resultMap>
+	
+	<!--  파일 업로드  -->
+	<insert id="insertReviewImage" parameterType="reviewimage">
+		insert into tb_review_image 
+		(
+			image_no,
+			review_no,
+			orgname,
+			sysname,
+			path
+		)
+		values
+		(
+			s_review_image_no.nextval,
+			#{reviewNo},
+			#{orgname},
+			#{sysname},
+			#{path}
+		)
+	</insert>
+	
+	<!-- 상세조회 -->
+	<select id="selectDetailReview" parameterType="int" resultMap="reviewMap">
+		select review_no, content, name
+		  from tb_cafe_review
+		 where review_no = #{reviewNo}
+	</select>	
+	
+	<select id="selectFilesByNo" parameterType="int" resultMap="reviewImageMap">
+		select *
+		  from tb_review_image
+		 where review_no = #{reviewNo}
+	</select>
+		
+	<!-- 
+	select review_no, max(path) path, max(sysname) sysname
+  from ( select rownum rnum, a.*
+           from ( select * 
+                    from tb_review_image
+                   order by review_no desc)a
+       )
+ where rnum between #{begin} and #{end}
+ group by review_no
+	 -->
+<!-- 
+		select *
+		  from ( select rownum rnum, a.*
+		           from ( select * 
+		                    from tb_review_image
+		                   order by review_no desc)a
+		       )
+		 where rnum between #{begin} and #{end}
+ -->	 
+	<select id="selectReviewPageList" parameterType="reviewpage" resultMap="reviewImageMap">
+		select review_no, max(path) path, max(sysname) sysname
+	  	  from ( select rownum rnum, a.*
+	           from ( select * 
+	                    from tb_review_image
+	                   order by review_no desc)a
+		       )
+		 where rnum between #{begin} and #{end}
+		 group by review_no
+	</select>
+	
+	<select id="selectReviewCount" resultType="int">
+		select count(*)
+		  from tb_cafe_review
+	</select>
+
+	<!--  댓글  -->
+<!-- 	<resultMap id="commentMap" type="comment"> -->
+<!-- 		<result column="comment_no" property="commentNo"/> -->
+<!-- 		<result column="review_no" property="reviewNo"/> -->
+<!-- 		<result column="content" property="content"/> -->
+<!-- 		<result column="mem_no" property="memNo"/> -->
+<!-- 		<result column="reg_date" property="regDate"/> -->
+<!-- 	</resultMap> -->
+	
+	<resultMap id="commentNicknameMap" type="comment">
+		<result column="comment_no" property="commentNo"/>
+		<result column="review_no" property="reviewNo"/>
+		<result column="content" property="content"/>
+		<result column="mem_no" property="memNo"/>
+		<result column="reg_date" property="regDate"/>
+		
+		<collection property="member"
+					column="mem_no" 
+					select="selectCommentNickname"/>
+	</resultMap>
+	
+	<select id="selectCommentName" resultMap="commentNicknameMap" parameterType="int">
+		select *
+		  from tb_review_comment
+		 where review_no = #{reviewNo}
+	</select>
+	
+	<select id="selectCommentNickname" parameterType="int" resultMap="memberMap">
+		select *
+		  from tb_member
+		 where mem_no = #{memNo}
+	</select>
+	<!-- 댓글 조회  -->
+<!-- 	<select id="selectCommentByNo" parameterType="int" resultMap="commentMap"> -->
+<!-- 		select *  -->
+<!-- 		  from tb_review_comment -->
+<!-- 		 where review_no = #{reviewNo} -->
+<!-- 		 order by comment_no -->
+<!-- 	</select> -->
+	
+	<!--  댓글 등록  -->
+	<insert id="insertComment" parameterType="comment">
+		insert into tb_review_comment(comment_no, review_no, content, mem_no)
+		values (s_review_comment_no.nextval, #{reviewNo}, #{content}, #{memNo}) 
+	</insert>
+	
+	<!-- 댓글 수정 -->
+	<update id="updateComment" parameterType="comment">
+		update tb_review_comment
+		   set content = #{content}
+		 where comment_no = #{commentNo}
+	</update>
+	
+	<!-- 댓글 삭제 -->
+	<delete id="deleteComment" parameterType="int">
+	    delete 
+	      from tb_review_comment
+	     where comment_no = #{commentNo}
+	</delete>	
+	
+	<!-- collection 사용 -->
+	<resultMap id="boardDetailMap" type="review">
+		<result column="review_no" property="reviewNo"/>
+		<result column="name" property="name"/>
+		<result column="reg_date" property="regDate"/>
+		<result column="rating_star" property="ratingStar"/>
+		<result column="content" property="content"/>
+		<result column="view_cnt" property="viewCnt"/>
+		<result column="mem_no" property="memNo"/>
+		
+		<collection property="imageList"
+					column="review_no" 
+					select="selectImageListByNo"/>
+	</resultMap>
+
+
+	
+<!-- 
+		select *
+		  from tb_cafe_reivew
+		 where review_no = #{reviewNo}
+ -->
+	<select id="selectBoardByNo" parameterType="int" resultMap="boardDetailMap">
+		select *
+		  from ( select rownum rnum, a.*
+		           from ( select * 
+		                    from tb_cafe_review
+		                   order by review_no desc)a
+		       )
+		 where rnum between #{begin} and #{end}
+	</select>
+	
+	<select id="selectImageListByNo" parameterType="int" resultMap="reviewImageMap">
+		select *
+		  from tb_review_image
+		 where review_no = #{reviewNo}
+		 order by review_no desc
+	</select>
+	
+	
+	<resultMap id="memberMap" type="member" >
+		<result column="mem_no" property="memNo"/>
+		<result column="id" property="id"/>
+		<result column="pass" property="pass"/>
+		<result column="name" property="name"/>
+		<result column="nickname" property="nickname"/>
+		<result column="phone" property="phone"/>
+		<result column="postcode" property="postcode"/>
+		<result column="basic_addr" property="basicAddr"/>
+		<result column="detail_addr" property="detailAddr"/>
+		<result column="manage_at" property="manageAt"/>
+		<result column="salt" property="salt"/>
+	</resultMap>
+<!-- 	 유저 닉네임 가져오기  -->
+	<select id="selectUserNickname" parameterType="int" resultMap="memberMap">
+		select *
+		  from tb_member m, tb_cafe_review r
+		 where m.mem_no = r.mem_no
+		   and review_no = #{reviewNo} 
+	</select>
+	
+	<!-- 후기글 삭제 -->
+
+</mapper>

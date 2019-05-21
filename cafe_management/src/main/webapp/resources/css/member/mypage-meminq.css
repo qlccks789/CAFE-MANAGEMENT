@@ -1,0 +1,75 @@
+.mypage-section__meminq {
+  width: 100%;
+}
+
+.mypage__meminq-table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.mypage__meminq-table tr {
+  border-bottom: 1px solid var(--colorBorder);
+}
+
+.mypage__meminq-table th {
+  font-size: 20px;
+}
+.mypage__meminq-table td {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.mypage__meminq-table th,
+.mypage__meminq-table td {
+  text-align: center;
+  vertical-align: middle;
+  height: 30px;
+}
+
+.mypage__meminq-table th:first-child {
+  width: 10%;
+}
+
+.mypage__meminq-table th:nth-child(2) {
+  width: 60%;
+}
+
+.mypage__meminq-table th:last-child {
+  width: 30%;
+}
+
+.mypage-table__detail {
+  border-radius: 3px;
+}
+
+.mypage-detail__content {
+  width: 100%;
+  margin: 10px;
+}
+
+.mypage-detail__content .detail__row {
+  display: flex;
+  padding: 0px 10px;
+  height: 30px;
+  background-color: #c5ab8d;
+  opacity: 0.9;
+}
+
+.mypage-detail__content .detail__row span {
+  font-size: 12px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  padding-left: 20px;
+}
+
+.mypage-detail__content .detail__row .detail__name {
+  padding: 10px;
+  width: 20%;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}

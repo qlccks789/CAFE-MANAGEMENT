@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!-- 설정파일에서 사용할 프로퍼티의 파일의 경로 지정: classpath -->
+	<properties resource="config/mybatis/db.properties"/>
+	
+	<!-- SQL의 결과를 담을 VO 객체들의 별칭을 설정하여 사용의 편의를 도모
+	-->
+	<typeAliases>
+		<typeAlias alias="review" type="kr.co.bitguys.repository.vo.ReviewVO" />
+		<typeAlias alias="comment" type="kr.co.bitguys.repository.vo.CommentVO" />
+		<typeAlias alias="reviewimage" type="kr.co.bitguys.repository.vo.ReviewImageVO" />
+		<typeAlias alias="inquire" type="kr.co.bitguys.repository.vo.InquireVO" />
+		<typeAlias alias="cafe" type="kr.co.bitguys.repository.vo.CafeVO" />
+		<typeAlias alias="goods" type="kr.co.bitguys.repository.vo.GoodsVO" />
+		<typeAlias alias="goodsimage" type="kr.co.bitguys.repository.vo.GoodsImageVO" />
+		<typeAlias alias="goodspage" type="kr.co.bitguys.repository.vo.GoodsPageVO" />
+		<typeAlias alias="reviewpage" type="kr.co.bitguys.repository.vo.ReviewPageVO" />
+		<typeAlias alias="inqpage" type="kr.co.bitguys.repository.vo.InquirePageVO" />
+		<typeAlias alias="member" type="kr.co.bitguys.repository.vo.MemberVO" />
+	</typeAliases>
+	
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC"/>
+			<dataSource type="POOLED">
+				<property name="driver" value="${driver}" />
+				<property name="url" value="${url}" />
+				<property name="username" value="${username}" />
+				<property name="password" value="${password}" />
+			</dataSource>
+		</environment>
+	</environments>
+
+	<mappers>
+		<mapper resource="config/mapper/review.xml"/>
+		<mapper resource="config/mapper/goods.xml"/>
+		<mapper resource="config/mapper/cafe.xml"/>
+		<mapper resource="config/mapper/member.xml"/>
+		<mapper resource="config/mapper/inquire.xml"/>
+	</mappers>
+</configuration>

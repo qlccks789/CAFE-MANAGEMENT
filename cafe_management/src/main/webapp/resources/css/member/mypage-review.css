@@ -1,0 +1,37 @@
+.mypage .mypage-table {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mypage-table th {
+  font-size: 18px;
+}
+
+.mypage-table th,
+.mypage-table td {
+  text-align: center;
+  vertical-align: middle;
+  height: 40px;
+}
+.mypage-table tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.mypage-section > div > table tr:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.mypage-table tr th:first-child {
+  width: 10%;
+}
+
+.mypage-table tr th:nth-child(2) {
+  width: 70%;
+}
+
+.mypage-table tr th:last-child {
+  width: 20%;
+}

@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.inner {
+    width : 1200px;
+    margin :0 auto;
+}
+
+.insert_title {
+    width : 80%;
+    margin :0 auto;
+    padding-top : 30px;
+    padding-left : 30px;
+    
+}
+
+.title_text {
+    font-size : 30px;
+}
+
+.form_area {
+    width: 80%;
+    margin:0 auto;
+    padding : 30px;
+}
+
+.goods_model_name {
+    width : 100%;
+}
+.textarea {
+    width:100%;
+}
+.item + .item {
+    margin-top : 20px;
+    
+}
+
+.goods_insert_button {
+    margin-top:20px;
+    text-align:center;
+}
+
+.btn_insert{
+    width:400px;
+    padding:10px;
+    font-size:18px;
+    background-color: --colorBrown;
+    border : none;
+    color:#fff;
+    font-weight :bold;
+}
+.font {
+    margin-bottom:10px;
+}
+
+
+
+

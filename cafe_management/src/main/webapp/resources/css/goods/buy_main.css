@@ -1,0 +1,99 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+.goods {font-family: 'Noto Sans KR', sans-serif;background:#d1ccc0}
+.goods .contents {padding:60px 0;}
+.goods a:hover, .goods button:hover {opacity:0.75} 
+
+.inner {
+    width : 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0 6px 13px rgba(31,31,31,0.23);
+}
+
+.goods_title {
+    font-family: "Jua", sans-serif;
+    font-weight : normal;
+    font-size : 40px;
+    color : #795227;    
+}
+
+.list_wrap ul {
+    overflow:hidden;
+    margin-top:40px;
+    margin-left: -10px;
+}
+
+.list_wrap ul .goods_list {
+    float : left;
+    width : 25%;
+    padding:0 0 60px 10px;
+}
+
+.goods_link {
+    display : block;
+    padding-bottom:10px;
+}
+
+.goods_link:hover {
+    opacity : 0.75;
+    background: var(--colorWhite);
+    box-shadow: 0 6px 13px rgba(31,31,31,0.23);
+}
+.goods_link:hover .goods_visual {
+    border : 1px solid #795227;
+}
+
+.goods_list a .goods_visual {
+    width : 100%;
+    height : 300px;
+    border : 1px solid #ddd;
+}
+
+.goods_info{
+    padding :20px 10px 0;
+}
+
+.goods_name {
+    font-size:15px;
+    height: 44px;
+    line-height:1.4;
+}
+
+.goods_price {
+    padding-top:10px;
+    font-size:20px;
+    font-weight : bold;
+    line-height:1.5;    
+}
+
+.goods_price .unit {
+    display: inline-block;
+    padding-left: 5px;
+    font-size:14px;
+    font-weight:normal;
+}
+
+.pagination {
+    margin :20px auto 0;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+}
+
+.pagination a.on {
+    border : 1px solid #ccc;
+    color: red;
+}
+
+.pagination a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}

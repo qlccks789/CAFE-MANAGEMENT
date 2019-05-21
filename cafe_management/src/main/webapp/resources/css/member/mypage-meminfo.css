@@ -1,0 +1,79 @@
+/* 회원정보 테이블 css */
+.mypage-section__meminfo {
+    width: 100%;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .mypage__meminfo-table {
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .mypage__meminfo-table tr {
+    height: 30px;
+  }
+  .mypage__meminfo-table td {
+    vertical-align: middle;
+  }
+  
+  .mypage__meminfo-table td:first-child {
+    width: 24%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 1em;
+  }
+  
+  .mypage__meminfo-table td:last-child {
+    padding-left: 8px;
+    width: 76%;
+    font-weight: 100;
+    font-size: 0.9em;
+    color: 1px solid rgba(0, 0, 0, 0.7);
+  }
+  
+  /* 수정 버튼 css */
+  .mypage-section__meminfo .meminfo-btn {
+    margin-top : 5px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .meminfo-btn > button {
+    background: var(--colorReddishBrown);
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 40px;
+    font-size: 1.2em;
+    padding: 0 1em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    border-radius: 5px;
+  }
+  .meminfo-btn > button:hover {
+    background: #fff;
+    color: var(--colorReddishBrown);
+  }
+  .meminfo-btn > button:before,
+  .meminfo-btn > button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: var(--colorReddishBrown);
+    transition: 400ms ease all;
+  }
+  .meminfo-btn > button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+  .meminfo-btn > button:hover:before,
+  .meminfo-btn > button:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
